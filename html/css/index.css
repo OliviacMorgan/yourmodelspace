@@ -1,0 +1,38 @@
+.intro-text{
+    position: absolute;
+    top:17%;
+    left: 50%;
+    transform: translate( -50% )
+}
+.intro-section{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    top:1em;
+}
+.rest-of-page{
+    z-index: 3;
+    padding: 3em;
+}
+	/* down arrow */
+.arrow-home{
+    z-index: 1;
+    overflow: hidden;
+    position:relative;
+    bottom:7vw;
+}
+.arrow-container{
+    
+}
+.arrow-animate{
+     -webkit-animation: action 1s infinite  alternate;
+     animation: action 1s infinite  alternate;
+}
+@-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+@keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
