@@ -3,7 +3,7 @@
 
 
     html, body {
-		font-size: 1em;    
+		font-size: 1em;
 	}
 
 	body{
@@ -29,14 +29,14 @@
     }
 
 	img {
-	    -moz-user-select: none; 
+	    -moz-user-select: none;
 	    -webkit-user-select: none;
-	    -ms-user-select: none; 
-	    user-select: none; 
+	    -ms-user-select: none;
+	    user-select: none;
 	    -webkit-user-drag: none;
 	    user-drag: none;
 	}
-	
+
 	a{
 		font-family: 'Raleway', sans-serif;
         text-decoration:none;
@@ -58,6 +58,8 @@
 
 	ol, ul{
 		list-style:none;
+		font-family:'Raleway', sans-serif;
+		font-size: 15;
 	}
 
 	.no-padding{
@@ -67,7 +69,7 @@
 	.no-margin{
 		margin:0 !important;
 	}
-	
+
 	.no-border{
 		border: none !important;
 		border-style: none !important;
@@ -117,7 +119,7 @@
 	.normal{
 		font-weight: 400;
 	}
-	
+
 	.light{
 		font-weight: 300;
 	}
@@ -125,7 +127,7 @@
 	.lighter{
 		font-weight: 100;
 	}
-	
+
 
 /* Font Colors
 -------------------------*/
@@ -145,3 +147,69 @@
 	.gray2{
 		color: #505050;
 	}
+
+	/* Footer start */
+footer{
+	font:
+	z-index: 100;
+	position: fixed;
+	height: 5em;
+	left:0;
+	bottom:0;
+	width: 100%;
+	background-image: linear-gradient(to top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 84%,rgba(255,255,255,0) 100%)
+}
+
+	.footer-links{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.footer-button{
+		padding-top:1em;
+		border: 1px solid grey;
+		border-radius: 2em;
+		margin-right: 1em;
+	}
+	.footer-button:hover{
+		background-color: #d3d3d3;
+	}
+
+	.social-menu li a:before {
+			font-family: 'Fontawesome';
+			-webkit-font-smoothing: antialiased;
+	 }
+	 /*-- add in 			content: '\f08e'; to social-menu li a:before if you want all links to have icons--*/
+
+	.social-menu li a[href*="facebook.com"]::before { content: '\f09a'; }
+
+	.social-menu li a[href*="instagram.com"]::before { content: '\f16d'; }
+
+	.social-menu li a[href*="linkedin.com"]::before { content: '\f0e1'; }
+
+	.social-menu li a[href*="youtube.com"]::before { content: '\f167'; }
+
+
+	.social-menu ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	}
+
+
+	.menu ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+	}
+
+	.menu li a {
+			display: block;
+			text-decoration: none;
+			color: grey;
+			padding: .6em 1em;
+			font-weight: inherit !important;
+	}/*footer end*/
