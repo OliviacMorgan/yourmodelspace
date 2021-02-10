@@ -7,7 +7,7 @@ function popup(mylink, windowname) {//created function with 2 arguments
       if (typeof(mylink) == 'string') href=mylink;//test if my link is a string. if it is a string we assign href the value the string
       else href=mylink.href;//if the link is not a string (<a> or <area> tag) we assign href the value of the objects href property
 
-      window.open(href, windowname, 'width=400,height=200,scrollbars=yes');//calls popup to open
+      window.open(href, windowname, 'width=500,height=400,left=2000,top=100, toolbar=no, scrollbars=yes');//calls popup to open
       //href is the url to open popup
       //windowname is unique name of popup
       //following arguments are properties of the window
