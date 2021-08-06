@@ -6,6 +6,7 @@
 }
 .intro-section{
     height: 600px;
+    z-index: -1;
     overflow: hidden;
     position: relative;
     top:1em;
@@ -20,9 +21,6 @@
     overflow: hidden;
     position:relative;
     bottom:7vw;
-}
-.arrow-container{
-    
 }
 .arrow-animate{
      -webkit-animation: action 1s infinite  alternate;
